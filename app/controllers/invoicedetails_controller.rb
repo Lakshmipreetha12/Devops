@@ -2,6 +2,7 @@ class InvoicedetailsController < ApplicationController
   skip_before_action :verify_authenticity_token
   before_action :set_invoicedetail, only: %i[ show edit update destroy ]
 
+  #edited......
   # GET /invoicedetails or /invoicedetails.json
   def index
     @invoicedetails = Invoicedetail.all
