@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 2022_06_23_162412) do
 
   create_table "invoicedetails", force: :cascade do |t|
     t.integer "invoice_number"
-    t.integer "invoice_date"
+    t.date "invoice_date"
     t.string "shipping_address"
     t.string "billing_address"
-    t.integer "total_amount"
+    t.float "total_amount"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
